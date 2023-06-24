@@ -1,5 +1,7 @@
 /*********
   Rui Santos
+  Yupeng Chang
+  Edward Li
   Complete project details at https://randomnerdtutorials.com  
 *********/
 
