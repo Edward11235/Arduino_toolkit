@@ -3,6 +3,8 @@
   Yupeng Chang
   Edward Li
   Complete project details at https://randomnerdtutorials.com  
+
+  Screnn: ssd1306_128x64_i2c
 *********/
 
 #include <Wire.h>
