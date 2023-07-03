@@ -26,13 +26,15 @@ void setup() {
   }
   delay(2000);
   display.clearDisplay();
-
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0, 10);
   // Display static text
-  display.println("Hello, world!");
+  display.setCursor(0, 10);
+  display.setTextSize(2);
+  display.println("Hello!");
   display.display(); 
+  delay(2000);
 }
 
 void loop() {
