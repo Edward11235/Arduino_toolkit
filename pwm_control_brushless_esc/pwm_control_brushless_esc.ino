@@ -20,35 +20,17 @@ void setup() {
 }
 
 void loop() {
-   for (int pulseWidth = 1500; pulseWidth >= 1000; pulseWidth -= 100) {
-    Serial.print("Decreasing high signal to: ");
-    Serial.print(pulseWidth);
-    Serial.println(" microseconds, counterclockwise rotation");
-    esc.writeMicroseconds(pulseWidth); // Set the pulse width
-    delay(1000); // Short delay for gradual decrease
-  }
+  int pulseWidth = 1450;
+  Serial.print("Decreasing high signal to: ");
+  Serial.print(pulseWidth);
+  Serial.println(" microseconds, counterclockwise rotation");
+  esc.writeMicroseconds(pulseWidth); // Set the pulse width
+  delay(10000); // Short delay for gradual decrease
 
-  for (int pulseWidth = 1000; pulseWidth <= 1500; pulseWidth += 100) {
-    Serial.print("Decreasing high signal to: ");
-    Serial.print(pulseWidth);
-    Serial.println(" microseconds, counterclockwise rotation");
-    esc.writeMicroseconds(pulseWidth); // Set the pulse width
-    delay(1000); // Short delay for gradual decrease
-  }
-
-  for (int pulseWidth = 1500; pulseWidth <= 2000; pulseWidth += 100) {
-    Serial.print("Decreasing high signal to: ");
-    Serial.print(pulseWidth);
-    Serial.println(" microseconds, counterclockwise rotation");
-    esc.writeMicroseconds(pulseWidth); // Set the pulse width
-    delay(1000); // Short delay for gradual decrease
-  }
-
-  for (int pulseWidth = 2000; pulseWidth >= 1500; pulseWidth -= 100) {
-    Serial.print("Decreasing high signal to: ");
-    Serial.print(pulseWidth);
-    Serial.println(" microseconds, counterclockwise rotation");
-    esc.writeMicroseconds(pulseWidth); // Set the pulse width
-    delay(1000); // Short delay for gradual decrease
-  }
+  pulseWidth = 1500;
+  Serial.print("Decreasing high signal to: ");
+  Serial.print(pulseWidth);
+  Serial.println(" microseconds, counterclockwise rotation");
+  esc.writeMicroseconds(pulseWidth); // Set the pulse width
+  delay(10000); // Short delay for gradual decrease
 }
