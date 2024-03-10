@@ -9,8 +9,8 @@ void setup() {
   pinMode(INT2, OUTPUT);
 
   // Initialize the motor direction
-  digitalWrite(INT1, LOW);  // Set INT1 low
-  digitalWrite(INT2, HIGH); // Set INT2 high to define motor direction
+  digitalWrite(INT1, HIGH);  // Set INT1 low
+  digitalWrite(INT2, LOW); // Set INT2 high to define motor direction
 }
 
 void loop() {
